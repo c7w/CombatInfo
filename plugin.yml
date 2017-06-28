@@ -1,0 +1,14 @@
+author: c7w
+version: 1.0
+name: CombatInfo
+main: cf.cc7w.combatinfo.CombatInfo
+softdepend: [ActionAnnouncer]
+commands:
+  cinfo:
+    usage: ''
+    permission: ''
+permissions:
+  cinfo.set:
+    default: op
+  cinfo.reload:
+    default: op

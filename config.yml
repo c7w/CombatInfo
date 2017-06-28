@@ -1,0 +1,28 @@
+setting:
+#全局设置
+  message-to-chat: true
+  #战斗消息是否输出到聊天栏
+  message-to-action-bar: false
+  #战斗消息是否输出到 ActionBar  需要 ActionAnnouncer 插件支持
+  message-to-title: false
+  #战斗消息是否输出到标题行
+
+format:
+  health-use-heart: true
+  #血量显示格式
+  # true —— 即 ❤ 的数量 普通玩家最大值为 10.0
+  # false —— 即玩家的血量 普通玩家最大值为 20.0
+  
+
+message:
+#消息设置
+#支持使用颜色代码 请使用 '&'
+#支持使用变量 变量列表：
+#%damager% 攻击者的名字
+#%damager-health% 攻击者的血量
+#%victim% 受伤者的名字
+#%victim-health% 受伤者的血量
+  damager: '&a[&6战斗信息&a] &2您&a(&2%damager-health%&c❤&a)&e攻击了&4%victim%&a(&4%victim-health%&c❤&a)'
+  #显示给攻击者的消息
+  victim: '&a[&6战斗信息&a] &4您&a(&4%victim-health%&c❤&a)&e被&2%damager%&a(&2%damager-health%&c❤&a)&e攻击了'
+  #显示给受伤者的消息
